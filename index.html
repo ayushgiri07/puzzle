@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puzzle</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="nav">
+	 <audio id="cheers" controls="none" preload="auto" style="display:none">
+	  <source src="aud.mp3" type="audio/mp3">
+	  </audio>
+	  
+	  <audio id="cut" controls="none" preload="auto" style="display:none">
+	  <source src="cut.mp3" type="audio/mp4">
+	  </audio>
+	  
+	   <audio id="no" controls="none" preload="auto" style="display:none">
+	  <source src="no.mp3" type="audio/mp4">
+	 </audio>
+	<div id="nav-bg">
+		<div id="P" class="letter"><h1>P</h1></div>
+		<div id="U" class="letter"><h1>U</h1></div>
+		<div id="Z" class="letter"><h1>Z</h1></div>
+		<div id="Z1" class="letter"><h1>Z</h1></div>
+		<div id="L" class="letter"><h1>L</h1></div>
+		<div id="E" class="letter"><h1>E</h1></div>
+	</div>
+	<div id="logo">
+		<center><img src="logo.jpg" width="200"></center>
+	</div>
+</div>
+<div id="chooseImage">
+	<fieldset>
+		<legend>Select an image</legend>
+		<center><div id="image1" onclick="img1()"><img id="img01" src="https://petapixel.com/assets/uploads/2019/06/manipulatedelephant-800x534.jpg"></div>
+		<div id="image2" onclick="img2()"><img id="img02" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/100F8/production/_104348756_stephencheatley-electricblackpool.jpg"></div>
+		<div id="image3" onclick="img3()"><img id="img03" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwpIKcA0riXAujiwphld6GEXUSNUZmqDjReaPQrIIQcsQjdJGW"></div>
+		<div id="image4" onclick="img4()"><img id="img04" src="https://envato-shoebox-0.imgix.net/4646/3935-85f4-41a0-b940-708875ee0a15/tajak+019.jpg?w=500&h=278&fit=crop&crop=edges&auto=compress%2Cformat&s=c45335aca948555287bc4229b1632950"></div></center>
+	</fieldset>
+</div>
+
+<div id="level">
+	<fieldset>
+		<legend>Select a level</legend>
+		<center>
+			<div id="Beginner" onclick="beg()"><h1>Beginner</h1></div>
+			<div id="Inter" onclick="int()"><h1>Intermmediate</h1></div>
+			<div id="advanced" onclick="ad()"><h1>Advanced</h1></div>
+		</center>
+	</fieldset>
+</div>
+<div id="puzzle">
+	<div id="new"><button id="newButton" onclick="newGame()">New Game</button></div>
+	<div id="original">
+		<img id="i1">
+		<img id="i2">
+		<img id="i3">
+		<img id="i4">
+		<img id="i5">
+		<img id="i6">
+		<img id="i7">
+		<img id="i8">
+		<img id="i9">
+	</div>
+
+	<div id="pieces">
+		<img id="f1" class="drag">
+		<img id="f2" class="drag">
+		<img id="f3" class="drag">
+		<img id="f4" class="drag">
+		<img id="f5" class="drag">
+		<img id="f6" class="drag">
+		<img id="f7" class="drag">
+		<img id="f8" class="drag">
+		<img id="f9" class="drag"s>
+	</div>
+	<div id="moves"><label>Moves:&nbsp</label><p id="pp">0</p></div>
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

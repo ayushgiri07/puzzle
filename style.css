@@ -1,0 +1,173 @@
+#original,#pieces{
+	height: 500px;
+	width: 500px;
+	display: inline-block;
+	font-size: 0;
+	padding: 50px;
+}
+
+#pieces{
+	font-size: initial;
+}
+
+#puzzle img{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	height: 150px;
+	width: 150px;
+}
+#puzzle{
+	text-align: center;
+	padding: 50px 0;
+	border:5px solid #34c6d3;
+	margin:50px;
+	border-radius: 20px;
+	display: none;
+}
+
+#level{
+	display: none;
+}
+
+
+
+body,html{
+	margin: 0;
+}
+
+#nav{
+	height: 200px;
+	width: 100%;
+	border-radius:0px 0px 20px 20px;
+	background: yellow;
+}
+
+#nav-bg{
+	text-align: center;
+}
+
+.letter{
+	display: inline-block;
+	margin: 20px 70px;
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	background: #fff;
+}
+
+.letter h1{
+	position: relative;
+	top: -50%;
+	font-weight: 1000;
+	font-size: 40px;
+	transform: translateY(50%) skew(3deg,5deg);
+}
+
+#P h1,
+#Z h1,
+#L h1{
+	top: -80%;
+}
+
+#P,#E{
+	color: red;
+}
+
+#U,#L{
+	color: yellow;
+}
+
+#Z{
+	color: lightblue;
+}
+
+#Z1{
+	color: green;
+}
+
+#logo img{
+	height: 150px;
+	width: 160px;
+	border: 0;
+	border-radius: 50%;
+	background: black;
+	margin-top: -10px;
+}
+
+#chooseImage{
+	margin: 50px 50px 20px 50px;
+}
+
+#level{
+	margin: 30px 50px 50px 50px;
+}
+
+#chooseImage div{
+	display: inline-block;
+	width: 200px;
+	height: 250px;
+	margin: 30px 10px;
+}
+
+#chooseImage img{
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	transition: 0.5s all;
+}
+
+#chooseImage img:hover{
+	transform: scale(1.1);
+}
+
+#chooseImage fieldset,
+#level fieldset{
+	border: 5px solid #34c6d3;
+	border-radius: 20px;
+}
+
+legend{
+	font-size: 30px;
+}
+
+#level fieldset{
+	padding: 50px;
+}
+
+#level div{
+	display: inline-block;
+	margin: 0 50px;
+	padding:10px 10px;
+	border-radius: 10px;
+	background:  #34c6d3;
+	transition: 0.3s all;
+	box-shadow: 0px 4px 6px 2px lightgrey;
+}
+
+#level div h1{
+	cursor: pointer;
+	font-weight: normal;
+	color: white;
+	padding: 0;
+	margin: 0;
+	font-size: 25px;
+}
+
+#level div:hover{
+	transform: scale(1.1);
+}
+
+#new{
+	text-align: left;
+	margin-left:  50px;
+}
+
+#moves{
+	text-align: center;
+}
+
+#moves label,
+#moves p{
+	display: inline-block;
+}
